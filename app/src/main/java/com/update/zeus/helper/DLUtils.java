@@ -11,8 +11,8 @@ public class DLUtils {
         PackageInfo pkgInfo = null;
 
         try {
-            pkgInfo = pm.getPackageInfo(apkFilepath,PackageManager.GET_ACTIVITIES);
-        } catch (PackageManager.NameNotFoundException e) {
+            pkgInfo = pm.getPackageArchiveInfo(apkFilepath,PackageManager.GET_ACTIVITIES);
+        } catch (Exception e) {
             e.printStackTrace();
         }
 

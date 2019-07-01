@@ -35,7 +35,7 @@ public final class BaseDexClassLoaderHookHelper {
         Object[] newElements = (Object[]) Array.newInstance(elementClass, dexElements.length + 1);
         // 构造插件 Element(File file, boolean isDirectory, File zip, DexFile dexFile) 这个构造函数
         Class[] c = {File.class, boolean.class, File.class, DexFile.class};
-        Object[] p = {apkFile, false, apkFile, DexFile.loadDex(apkFile.getCanonicalPath(), apkFile.getAbsolutePath(), 0)};
+        Object[] p = {apkFile, false, apkFile, DexFile.loadDex(apkFile.getCanonicalPath(), optDexFile.getAbsolutePath(), 0)};
         Object o = RefInvoke.createObject(elementClass, c, p);
 
         Object[] toAddElementArray = {o};

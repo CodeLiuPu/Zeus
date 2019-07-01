@@ -17,7 +17,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name="com.update.plugin.TestService"/>
+        <service android:name="com.update.plugin.service.TestService"/>
     </application>
 
 </manifest>
