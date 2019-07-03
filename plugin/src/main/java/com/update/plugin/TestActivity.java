@@ -1,7 +1,7 @@
 package com.update.plugin;
 
-import android.app.Activity;
+import com.update.lib_plugin.base.ZeusBaseActivity;
 
-public class TestActivity extends Activity {
+public class TestActivity extends ZeusBaseActivity {
 
 }
