@@ -1,4 +1,4 @@
-package com.update.zeus.helper;
+package com.update.lib_plugin.helper;
 
 import java.io.File;
 import java.io.IOException;

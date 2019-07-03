@@ -1,9 +1,7 @@
-package com.update.zeus.helper;
+package com.update.lib_plugin.helper;
 
 import android.content.Context;
 import android.content.res.AssetManager;
-
-import com.update.zeus.app.App;
 
 import java.io.Closeable;
 import java.io.File;

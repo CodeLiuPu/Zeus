@@ -1,4 +1,4 @@
-package com.update.zeus.helper;
+package com.update.lib_plugin.helper;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;

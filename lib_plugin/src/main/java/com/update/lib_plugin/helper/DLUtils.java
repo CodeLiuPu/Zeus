@@ -1,4 +1,4 @@
-package com.update.zeus.helper;
+package com.update.lib_plugin.helper;
 
 import android.content.Context;
 import android.content.pm.PackageInfo;

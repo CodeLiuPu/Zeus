@@ -1,4 +1,4 @@
-package com.update.zeus.data;
+package com.update.lib_plugin.data;
 
 import android.content.pm.PackageInfo;
 
