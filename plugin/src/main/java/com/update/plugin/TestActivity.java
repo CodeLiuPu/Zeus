@@ -1,4 +1,7 @@
 package com.update.plugin;
 
-public class TestActivity {
+import android.app.Activity;
+
+public class TestActivity extends Activity {
+
 }
