@@ -7,10 +7,10 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.update.lib_plugin.data.PluginItem;
+import com.update.lib_plugin.helper.DLUtils;
+import com.update.lib_plugin.helper.Utils;
 import com.update.zeus.R;
-import com.update.zeus.data.PluginItem;
-import com.update.zeus.helper.DLUtils;
-import com.update.zeus.helper.Utils;
 
 import java.io.File;
 
@@ -19,11 +19,13 @@ public class MainActivity extends AppCompatActivity {
 
     protected Activity activity;
     PluginItem pluginItem;
+
     @Override
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(newBase);
         Utils.extractAssets(newBase, apkName);
     }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 try {
                     Intent intent = new Intent();
-                    String serviceName = pluginItem.packageInfo.packageName + ".service.TestService";
+                    String serviceName = pluginItem.packageInfo.packageName + ".TestService";
                     intent.setClass(activity, Class.forName(serviceName));
                     startService(intent);
                 } catch (ClassNotFoundException e) {

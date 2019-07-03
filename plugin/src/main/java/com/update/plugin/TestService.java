@@ -1,4 +1,4 @@
-package com.update.plugin.service;
+package com.update.plugin;
 
 import android.app.Service;
 import android.content.Intent;

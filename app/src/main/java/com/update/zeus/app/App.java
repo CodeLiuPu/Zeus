@@ -3,8 +3,8 @@ package com.update.zeus.app;
 import android.app.Application;
 import android.content.Context;
 
-import com.update.zeus.helper.BaseDexClassLoaderHookHelper;
-import com.update.zeus.helper.Utils;
+import com.update.lib_plugin.helper.BaseDexClassLoaderHookHelper;
+import com.update.lib_plugin.helper.Utils;
 
 import java.io.File;
 import java.io.IOException;
@@ -26,7 +26,7 @@ public class App extends Application {
         File optDexFile = getFileStreamPath(dexName);
 
         try {
-            BaseDexClassLoaderHookHelper.patchClassLoader(getClassLoader(),dexFile,optDexFile);
+            BaseDexClassLoaderHookHelper.patchClassLoader(getClassLoader(), dexFile, optDexFile);
         } catch (IOException e) {
             e.printStackTrace();
         }
